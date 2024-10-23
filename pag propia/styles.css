@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F4FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 470px;
+}
+
+
+
+header {
+    width: 100%;
+    background-color: #0C4C78;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinea el logo y el título verticalmente */
+}
+
+.logo img {
+    height: 90px;
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0; /* Elimina márgenes para evitar separación vertical */
+}
+
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.login-box, .manual-box {
+    background-color: #83B5E3;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.user-icon {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.login-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-box button {
+    padding: 10px 20px;
+    background-color: #0C4C78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.manual-btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.manual-box {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #83B5E3;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.manual-box:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #4A90E2;
+    color: white;
+}
+
